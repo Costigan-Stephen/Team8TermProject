@@ -32,6 +32,14 @@
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/Theme.TermProject.PopupOverlay" />
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="70px"
+                tools:srcCompat="@tools:sample/avatars" />
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -92,12 +100,12 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="match_parent"
+        android:layout_width="221dp"
         android:layout_height="wrap_content"
-        android:text="My Profile"
+        android:text="My \nProfile"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="center" />
+        app:layout_anchorGravity="end|center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
