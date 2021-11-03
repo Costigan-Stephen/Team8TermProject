@@ -112,4 +112,5 @@
     <string name="login">Login</string>
     <string name="app">App</string>
     <string name="message_list">Message List</string>
+    <string name="add_new_message">Add new message</string>
 </resources>
