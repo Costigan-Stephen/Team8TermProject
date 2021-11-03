@@ -113,4 +113,10 @@
     <string name="app">App</string>
     <string name="message_list">Message List</string>
     <string name="add_new_message">Add new message</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
 </resources>
