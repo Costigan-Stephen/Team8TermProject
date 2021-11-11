@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.12985274431057564" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.1515625" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout/activity_profile_page.xml" value="0.20208333333333334" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout/content_scrolling.xml" value="0.20208333333333334" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout/message_list.xml" value="0.20208333333333334" />
-        <entry key="..\:/OneDrive - BYU-Idaho/BYUI/CS 246 Software Design and Development/TermProject/app/src/main/res/layout/sign_in.xml" value="0.20208333333333334" />
         <entry key="..\:/OneDrive - BYU-Idaho/BYUI/TermProject/app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.22657295850066933" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/activity_profile_page.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/activity_profile_screen.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/content_scrolling.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/message_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/blain/AndroidStudioProjects/Team8TermProject/app/src/main/res/layout/profile_page.xml" value="0.28940217391304346" />
       </map>
     </option>
   </component>
