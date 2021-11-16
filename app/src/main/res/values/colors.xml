@@ -2,6 +2,6 @@
 <resources>
     <color name="background_blue">#72d4ff</color>
     <color name="sent_message_color">#cee8ff</color>
-    <color name="recieved_message">#ececec</color>
+    <color name="received_message">#ececec</color>
     <color name="contact_alphabet_background">#8a8a8a</color>
 </resources>

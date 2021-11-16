@@ -9,40 +9,25 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="0dp"
         android:layout_height="59dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="648dp"
         android:clickable="true"
         android:contentDescription="@string/add_new_message"
         android:focusable="true"
-        app:backgroundTint="#AE9FFF"
+        app:backgroundTint="@color/background_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="59dp"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="407dp"
-        android:layout_height="634dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SpeakableTextPresentCheck">
-
-    </ScrollView>
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="413dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="1dp"
-        android:background="?attr/colorPrimary"
+        android:layout_width="416dp"
+        android:layout_height="92dp"
+        android:background="@color/background_blue"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,3 +45,5 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
