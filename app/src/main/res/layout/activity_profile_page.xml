@@ -1,111 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".ProfilePage"
-    android:background="@color/teal_700">
+    android:background="">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
-        android:fitsSystemWindows="true"
-        android:theme="@style/Theme.TermProject.AppBarOverlay">
+        android:layout_height="match_parent" >
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
+            android:layout_height="75dp"
+            android:background="@color/background_blue"
+            android:fontFamily="cursive"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textColor="#546E7A"
+            android:textSize="60sp" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/Theme.TermProject.PopupOverlay" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/received_message"
+            android:contentDescription="@string/todo"
+            android:translationY="75dp"
+            app:srcCompat="@drawable/stockimage"
+            tools:ignore="ImageContrastCheck" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70px"
-                android:layout_marginTop="70px"
-                tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/name"
+            android:textColor="@color/background_blue"
+            android:textSize="20sp"
+            android:translationY="275dp" />
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/contact_email"
+            android:textColor="@color/background_blue"
+            android:textSize="20sp"
+            android:translationY="300dp" />
 
-    <include layout="@layout/content_scrolling" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/background_blue"
 
-    <LinearLayout
+            android:textSize="20sp"
+            android:translationY="325dp"
+            tools:ignore="TextContrastCheck" />
+
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginTop="515px"
-        android:layout_marginRight="50px"
-        android:background="@color/teal_200"
-        android:orientation="vertical"
-        >
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_blue"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/bottom_nav" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:layout_margin="10px"
-            android:text="Name" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:text="Contact Info"
-            android:layout_margin="10px"/>
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:text="Date joined"
-            android:layout_margin="10px"/>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:text="Number of Contacts/Friends"
-            android:layout_margin="10px"/>
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:text="Another Section"
-            android:layout_margin="10px"/>
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:text="Another Section" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="221dp"
-        android:layout_height="wrap_content"
-        android:text="My \nProfile"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="end|center" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
