@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_blue">#72d4ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
     <color name="sent_message_color">#cee8ff</color>
     <color name="received_message">#ececec</color>
     <color name="contact_alphabet_background">#8a8a8a</color>
