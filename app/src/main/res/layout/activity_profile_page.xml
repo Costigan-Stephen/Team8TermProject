@@ -18,7 +18,7 @@
             android:layout_height="75dp"
             android:background="@color/background_blue"
             android:fontFamily="cursive"
-            android:text="@string/profile"
+            android:text="Profile"
             android:textAlignment="center"
             android:textColor="#546E7A"
             android:textSize="60sp" />

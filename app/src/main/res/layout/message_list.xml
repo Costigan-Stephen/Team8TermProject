@@ -5,121 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="417dp"
-            android:layout_height="88dp"
+            android:layout_width="410dp"
+            android:layout_height="82dp"
             android:background="@color/background_blue"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="88dp"
+            tools:layout_conversion_absoluteWidth="417dp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="92dp"
+            android:layout_marginEnd="76dp"
             android:text="@string/message_list"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
             app:layout_constraintEnd_toStartOf="@+id/add_message"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TextContrastCheck" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar2"
-            android:layout_width="412dp"
-            android:layout_height="90dp"
-            android:background="@color/background_blue"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="642dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="TextContrastCheck"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="202dp" />
 
         <ImageButton
             android:id="@+id/add_message"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:backgroundTint="@color/background_blue"
             android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintHorizontal_bias="0.952"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.024"
             app:srcCompat="@drawable/add_button"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="70dp" />
 
-        <ImageButton
-            android:id="@+id/add_message2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="@color/background_blue"
-            android:contentDescription="@string/todo"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/message_button"
-            app:strokeColor="@color/white"
-            app:strokeWidth="2dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-        <ImageButton
-            android:id="@+id/add_message4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="@color/background_blue"
-            android:contentDescription="@string/todo"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.914"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/settings_button"
-            app:strokeColor="@color/white"
-            app:strokeWidth="2dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/add_message3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="17dp"
-            android:backgroundTint="@color/background_blue"
-            android:contentDescription="@string/todo"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.094"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/contact_button"
-            app:strokeColor="@color/white"
-            app:strokeWidth="2dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-    </FrameLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
