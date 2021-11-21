@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@color/background_blue"
     tools:context=".MainActivity">
 
     <TextView
@@ -40,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/email"
@@ -56,8 +57,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.432" />
 
     <EditText
         android:id="@+id/editText"
@@ -66,6 +66,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="380dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/password"
@@ -80,8 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
@@ -102,10 +102,10 @@
         android:layout_height="80dp"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="30dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:srcCompat="@drawable/whitearrow"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/whitearrow" />
 
     <TextView
         android:id="@+id/textView11"
