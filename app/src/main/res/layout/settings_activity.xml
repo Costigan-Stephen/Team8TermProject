@@ -17,7 +17,6 @@
             android:background="@color/background_blue"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +28,7 @@
             android:backgroundTint="@color/background_blue"
             android:contentDescription="@string/todo"
             app:srcCompat="@drawable/profile_foreground"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
             tools:layout_editor_absoluteX="328dp"
             tools:layout_editor_absoluteY="7dp" />
 
@@ -39,11 +38,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
