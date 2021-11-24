@@ -6,4 +6,7 @@
     <color name="sent_message_color">#cee8ff</color>
     <color name="received_message">#ececec</color>
     <color name="contact_alphabet_background">#8a8a8a</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#C11515</color>
 </resources>
