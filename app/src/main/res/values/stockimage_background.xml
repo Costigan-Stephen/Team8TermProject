@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="stockimage">stockimage</drawable>
+    <color name="stockimage_background">#FFFFFF</color>
 </resources>

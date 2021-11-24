@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_blue"
     tools:context=".RegisterActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="96dp">
+    tools:ignore="MissingDefaultResource">
 
     <TextView
         android:id="@+id/logo"

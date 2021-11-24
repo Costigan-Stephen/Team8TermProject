@@ -6,10 +6,10 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
-import com.example.termproject.databinding.ActivityProfilePageBinding;
+//import com.example.termproject.databinding.ActivityProfilePageBinding;
 public class ProfilePage extends AppCompatActivity {
 
-    private ActivityProfilePageBinding binding;
+    //private ActivityProfilePageBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
