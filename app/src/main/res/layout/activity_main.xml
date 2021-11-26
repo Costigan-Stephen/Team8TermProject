@@ -119,7 +119,7 @@
             android:id="@+id/textViewSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Sign Up"
+            android:text="Sign Up"
             android:textColor="@color/colorRed"
             tools:layout_editor_absoluteX="251dp"
             tools:layout_editor_absoluteY="512dp" />
