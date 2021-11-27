@@ -3,17 +3,17 @@ package com.example.termproject;
 import java.util.ArrayList;
 
 public class Messages {
-    private String mName;
+    private static String mName;
     private boolean mOnline;
 
     public Messages(String name, boolean online) {
         mName = name;
         mOnline = online;
     }
-
-    public boolean isOnline() {
-        return mOnline;
+    public static String getName() {
+        return mName;
     }
+
 
     private static int lastContactId = 0;
 
@@ -26,7 +26,5 @@ public class Messages {
 
         return contacts;
     }
-    public static String getName() {
-        return mName;
-    }
+
 }
