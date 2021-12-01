@@ -12,6 +12,10 @@
         <activity
             android:name=".Contacts"
             android:exported="true" />
+        <activity android:name="MessageList"
+            android:exported="true"
+            />
+
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
@@ -20,6 +24,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+        <activity
+            android:name=".ProfilePage"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
