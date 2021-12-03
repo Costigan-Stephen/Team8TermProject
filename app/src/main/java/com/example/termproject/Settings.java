@@ -24,7 +24,7 @@ public class Settings extends AppCompatActivity {
 //                    .replace(R.id.settings, new SettingsFragment())
 //                    .commit();
 //        }
-        ActionBar actionBar = getSupportActionBar();
+        /*ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -44,6 +44,27 @@ public class Settings extends AppCompatActivity {
                         break;
                     case R.id.icon_settings:
 
+                        break;
+                }
+                return false;
+            }
+        });*/
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.icon_contact:
+                        Intent c = new Intent(Settings.this,Contacts.class);
+                        startActivity(c);
+                        break;
+                    case R.id.icon_message:
+                        Intent a = new Intent(Settings.this,MessageList.class);
+                        startActivity(a);
+                        break;
+                    case R.id.icon_settings:
+                        Intent b = new Intent(Settings.this,Settings.class);
+                        startActivity(b);
                         break;
                 }
                 return false;
