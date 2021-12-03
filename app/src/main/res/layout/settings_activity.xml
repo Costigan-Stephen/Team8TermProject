@@ -24,14 +24,17 @@
 
         <ImageButton
             android:id="@+id/add_message"
-            android:layout_width="78dp"
-            android:layout_height="71dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
             android:backgroundTint="@color/background_blue"
             android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2"
             app:srcCompat="@drawable/profile_foreground"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteX="328dp"
-            tools:layout_editor_absoluteY="7dp" />
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView"
@@ -39,9 +42,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="188dp"
             android:text="@string/settings"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
+            app:layout_constraintEnd_toStartOf="@+id/add_message"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -8,20 +8,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.termproject.adapter.MessageItemAdapter;
 
 import java.util.ArrayList;
 
-class MessageList extends AppCompatActivity {
+public class MessageList extends AppCompatActivity {
 
     ArrayList<Messages> messages;
-    @Override
+    //@Override
     public void onCreate(Bundle savedInstanceState) {
         // ...
         super.onCreate(savedInstanceState);
@@ -31,13 +27,13 @@ class MessageList extends AppCompatActivity {
         RecyclerView rvMessages = (RecyclerView) findViewById(R.id.rvMessages);
 
         // Initialize contacts
-        messages = Messages.createMessageList(20);
-        // Create adapter passing in the sample user data
-        MessageItemAdapter adapter = new MessageItemAdapter(messages);
-        // Attach the adapter to the recyclerview to populate items
-        rvMessages.setAdapter(adapter);
-        // Set layout manager to position the items
-        rvMessages.setLayoutManager(new LinearLayoutManager(this));
+//        messages = Messages.createMessageList(20);
+//        // Create adapter passing in the sample user data
+//        MessageItemAdapter adapter = new MessageItemAdapter(messages);
+//        // Attach the adapter to the recyclerview to populate items
+//        rvMessages.setAdapter(adapter);
+//        // Set layout manager to position the items
+//        rvMessages.setLayoutManager(new LinearLayoutManager(this));
         // That's all!
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.termproject">
 
     <application
@@ -9,28 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TermProject">
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Contacts"
-            android:exported="true" />
-        <activity android:name="MessageList"
-            android:exported="true"
-            />
 
-        <activity
-            android:name=".Settings"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
         <activity
             android:name=".ProfilePage"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            tools:ignore="Instantiatable">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
@@ -38,12 +23,39 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name=".Contacts"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name=".MessageList"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="Instantiatable">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
     </application>
 
